@@ -14,7 +14,7 @@ const boxes = document.querySelector('.container-box');
 //     console.log(x);
 // }
 
-// MILESTONE 1
+// --------- MILESTONE 1 -------------
 // Per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
@@ -35,11 +35,29 @@ for (let x = 1; x <= 100; x++) {
         // se tutte le altre condizioni sono false, stampa in console il numero corrispondente
         console.log(x);
     }
-
 }
 
-// MILESTONE 2
+// ------------ MILESTONE 2 --------------
 // Dato un container nel DOM, appendi un elemento html con il numero o la stringa corretta.
+
+for (let x = 1; x <= 100; x++) {
+    if (x % 3 === 0 && x % 5 === 0) {
+        // multiplo di 3 e 5
+        boxes.innerHTML += '<div class="container-box">FizzBizz</div>';
+    }
+    else if (x % 3 === 0) {
+        // multiplo di 3
+        boxes.innerHTML += '<div class="container-box">Fizz</div>';   
+    }  
+    else if (x % 5 === 0)  {
+        // multiplo di 5
+        boxes.innerHTML += '<div class="container-box">Buzz</div>';  
+    }
+    else{
+        // se tutte le altre condizioni sono false, stampa nel box il numero corrispondente
+       boxes.innerHTML += `<div class="container-box">${x}</div>`;
+    }
+}
 
 // MILESTONE 3
 // Applica uno stile differente a seconda del valore dell’indice per i multipli di 3, 
