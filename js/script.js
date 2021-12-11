@@ -43,22 +43,22 @@ for (let x = 1; x <= 100; x++) {
 for (let x = 1; x <= 100; x++) {
     if (x % 3 === 0 && x % 5 === 0) {
         // multiplo di 3 e 5
-        boxes.innerHTML += '<div class="container-box">FizzBizz</div>';
+        boxes.innerHTML += '<div class="box box-plum">FizzBizz</div>';
     }
     else if (x % 3 === 0) {
         // multiplo di 3
-        boxes.innerHTML += '<div class="container-box">Fizz</div>';   
+        boxes.innerHTML += '<div class="box box-lavander">Fizz</div>';   
     }  
     else if (x % 5 === 0)  {
         // multiplo di 5
-        boxes.innerHTML += '<div class="container-box">Buzz</div>';  
+        boxes.innerHTML += '<div class="box box-thistle">Buzz</div>';  
     }
     else{
         // se tutte le altre condizioni sono false, stampa nel box il numero corrispondente
-       boxes.innerHTML += `<div class="container-box">${x}</div>`;
+       boxes.innerHTML += `<div class="box">${x}</div>`;
     }
 }
 
-// MILESTONE 3
+// MILESTONE 3 NEL CSS
 // Applica uno stile differente a seconda del valore dell’indice per i multipli di 3, 
 // per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5.
